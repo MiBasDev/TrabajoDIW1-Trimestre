@@ -1,0 +1,296 @@
+/******************* Main ******************/
+main {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container-compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+/***** Slideshow gafas *****/
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #b2b2b2;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+    left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/2 etc) */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border: 0.5px solid #B2B2B2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot,
+.dot:hover {
+    background-color: #B2B2B2;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.container-compra div img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+/***** Menú compra *****/
+.container-compra-things {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-items: center;
+}
+
+.container-compra-things ul {
+    list-style: none;
+}
+
+.container-compra-things ul li {
+    display: inline-block;
+}
+
+.table-prices tr th,
+.table-prices tr td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.table-prices tr th {
+    background-color: #B2B2B2;
+    padding-top: 5px;
+}
+
+.table-prices tr td {
+    font-size: small;
+}
+
+.container-compra-things ul li button {
+    padding: 15px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: background-color 0.2s linear;
+}
+
+/*** Primer color ***/
+.container-compra-things ul li:first-child button {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-compra-things ul li:first-child button:hover {
+    background-color: rgba(7, 7, 7, 0.9);
+}
+
+/*** Segundo color ***/
+.container-compra-things ul li:nth-child(2) button {
+    background-color: rgba(2, 82, 2, 0.5);
+}
+
+.container-compra-things ul li:nth-child(2) button:hover {
+    background-color: rgba(2, 82, 2, 0.9);
+}
+
+/*** Tercer color ***/
+.container-compra-things ul li:nth-child(3) button {
+    background-color: rgba(155, 91, 18, 0.5);
+}
+
+.container-compra-things ul li:nth-child(3) button:hover {
+    background-color: rgba(155, 91, 18, 0.9);
+}
+
+/*** Cuarto color ***/
+.container-compra-things ul li:nth-child(4) button {
+    background-color: rgba(18, 77, 155, 0.5);
+}
+
+.container-compra-things ul li:nth-child(4) button:hover {
+    background-color: rgba(18, 77, 155, 0.9);
+}
+
+/*** Quinto color ***/
+.container-compra-things ul li:last-child button {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+.container-compra-things ul li:last-child button:hover {
+    background-color: rgba(220, 220, 220, 0.9);
+}
+
+/*** Hover colores general ***/
+.container-compra-things ul li button:hover {
+    cursor: pointer;
+}
+
+/*** Botón comprar ***/
+.container-compra-things button {
+    padding: 15px;
+    width: 80%;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.container-compra-things button:hover {
+    color: white;
+    background-color: #B2B2B2;
+    cursor: pointer;
+}
+
+/***** Recomendados *****/
+.container-recomendados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.container-recomendados h3 {
+    text-align: center;
+}
+
+.container-recomendados-modelos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(110px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.container-recomendados-modelos div a img {
+    width: 100%;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container-recomendados-modelos div a img:hover {
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.6);
+}
+
+
+/*************************************************/
+/******************* Responsive ******************/
+/*************************************************/
+@media screen and (max-width: 920px) {
+    .container-compra {
+        flex-direction: column;
+    }
+
+    .container-recomendados-modelos {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(110px, 1fr));
+    }
+}
+
+/***** MOVIL *****/
+@media (max-width:375px) {
+    main {
+        width: 90%;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    .container-compra div img {
+        width: 100%;
+    }
+
+    .container-compra {
+        gap: 0px;
+    }
+
+    .container-recomendados {
+        margin-bottom: 20px;
+    }
+
+    .container-recomendados-modelos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+}

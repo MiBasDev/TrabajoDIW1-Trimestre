@@ -1,0 +1,68 @@
+/******************* Main ******************/
+main {
+    margin-bottom: 50px;
+}
+
+main h2 {
+    margin: 50px;
+    text-align: center;
+}
+
+/***** Catálogo gafas *****/
+.container-gafas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 80px;
+    justify-items: center;
+    margin: 0 80px;
+}
+
+.container-gafas div a img {
+    width: 100%;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container-gafas div a img:hover {
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.6);
+}
+
+
+/*************************************************/
+/******************* Responsive ******************/
+/*************************************************/
+@media screen and (max-width: 1220px) {
+    .container-gafas {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-gafas {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 50px;
+    }
+
+    .comprar-gafas-button {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}
+
+/***** MOVIL *****/
+@media (max-width:375px) {
+    main h2 {
+        font-size: 20px;
+    }
+
+    .container-gafas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        margin: 0 30px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora nuestra selección de gafas 'Ahora me ves' y aprovecha nuestras ofertas exclusivas. Encuentra el estilo perfecto que te hará destacar.">
+    <meta name="keywords"
+        content="ahora me ves, gafas, ofertas, descuentos en gafas, moda ocular ventas destacadas, recomendados, modelos, modelos de gafas">
+    <link rel="stylesheet" href="css/general.css" type="text/css">
+    <link rel="stylesheet" href="css/contacto.css" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Ahora me ves | Contacto</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo/logoGris.png" alt="logo"></a>
+        <!-- Hamburguesa -->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle" id="menu-btn">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">Inicio</a></li>
+                <li><a class="menu__item" href="catalogo.html">Catálogo</a></li>
+                <li><a class="menu__item" href="#">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+        <!-- Menú normal -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>CONTACTO</h2>
+        <form>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+            <input type="tel" name="telf" id="telf" placeholder="Número de teléfono" required>
+            <select name="mi-pregunta" id="mi-pregunta" required>
+                <option value="" selected>Selecciona un área</option>
+                <option value="1">Atención al cliente</option>
+                <option value="2">Devoluciones</option>
+                <option value="3">Reparaciones</option>
+            </select>
+            <input type="number" name="numero-pedido" id="numero-pedido" placeholder="Número de pedido" required>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+            <input type="submit" name="submit" id="submit" value="Enviar">
+        </form>
+    </main>
+
+    <aside>
+        <div class="aside-things">
+            <div class="aside-contact">
+                <h3>Contacta con nosotros</h3>
+                <p>+34 000 000 000</p>
+            </div>
+            <div class="aside-horario">
+                <h3>Horario:</h3>
+                <p>L-V 00:00-00:00</p>
+                <p>S 00:00-00:00</p>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-terms">
+            <ul>
+                <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                <li><a href="#">Términos Legales</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Mapa del Sitio</a></li>
+            </ul>
+        </div>
+        <div class="footer-redes">
+            <ul>
+                <li><a href="https://twitter.com"><img src="img/redes/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="img/redes/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="img/redes/facebook.svg" alt="Facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        menuActivated(); 
+    </script>
+</body>
+
+</html>
